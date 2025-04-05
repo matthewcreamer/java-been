@@ -7,71 +7,92 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <style>
+        .coffee-bg {
+            background-color: #f5e6d3;
+        }
+        .coffee-bg-light {
+            background-color: #f0e6d2;
+            border: 1px solid #e0d0b0;
+        }
+        .coffee-text {
+            color: #8b4513;
+        }
+        .coffee-border {
+            border-color: #d2b48c;
+        }
+        .feature-card {
+            background-color: #f8f1e6;
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
 </head>
 <body>
     <div id="navbar-placeholder"></div>
 
     <main class="container">
-        <div class="row align-items-center">
+        <div class="row align-items-center mt-3 coffee-bg rounded-3 p-4">
             <div class="col-md-6 fade-in">
                 <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1600&h=900&q=80" alt="Coffee Shop Interior" class="img-fluid rounded">
             </div>
             <div class="col-md-6 fade-in">
-                <h1>Crafted with Passion</h1>
+                <h1 class="coffee-text">Crafted with Passion</h1>
                 <h2 class="text-muted">Where Every Bean Tells a Story</h2>
-                <p class="mt-4">Welcome to Java Been, where passion meets precision in every cup. Our artisanal approach to coffee brings you a unique experience that awakens your senses and enriches your day.</p>
+                <p class="mt-3">Welcome to Java Been, where passion meets precision in every cup. Our artisanal approach to coffee brings you a unique experience that awakens your senses and enriches your day.</p>
                 <p>From carefully selected beans to expertly crafted beverages, we're dedicated to delivering exceptional quality in every aspect of your coffee journey.</p>
             </div>
         </div>
 
-        <div class="row mt-5 pt-4">
-            <div class="col-12 text-center mb-4">
-                <h2>Why Choose Java Been?</h2>
+        <div class="row mt-4 coffee-bg-light rounded-3 p-4">
+            <div class="col-12 text-center mb-3">
+                <h2 class="coffee-text">Why Choose Java Been?</h2>
+            </div>
+            <div class="row g-3">
+                <div class="col-md-4 fade-in">
+                    <div class="card h-100 border-0 shadow-sm feature-card">
+                        <div class="card-body text-center p-3">
+                            <div class="display-5 mb-2 coffee-text">☕️</div>
+                            <h3 class="h4 mb-2 coffee-text">Artisanal Quality</h3>
+                            <p class="mb-0">Each cup is crafted with precision using premium beans sourced from sustainable farms worldwide.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-in">
+                    <div class="card h-100 border-0 shadow-sm feature-card">
+                        <div class="card-body text-center p-3">
+                            <div class="display-5 mb-2 coffee-text">🌱</div>
+                            <h3 class="h4 mb-2 coffee-text">Sustainable Practice</h3>
+                            <p class="mb-0">We're committed to ethical sourcing and eco-friendly practices that respect our planet.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-in">
+                    <div class="card h-100 border-0 shadow-sm feature-card">
+                        <div class="card-body text-center p-3">
+                            <div class="display-5 mb-2 coffee-text">💝</div>
+                            <h3 class="h4 mb-2 coffee-text">Community First</h3>
+                            <p class="mb-0">More than just coffee, we're creating spaces where connections flourish and community thrives.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="row g-4 mb-5">
-            <div class="col-md-4 fade-in">
-                <div class="card h-100 border-0 shadow-sm">
-                    <div class="card-body text-center p-4">
-                        <div class="display-5 mb-3">☕️</div>
-                        <h3 class="h4 mb-3">Artisanal Quality</h3>
-                        <p>Each cup is crafted with precision using premium beans sourced from sustainable farms worldwide.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 fade-in">
-                <div class="card h-100 border-0 shadow-sm">
-                    <div class="card-body text-center p-4">
-                        <div class="display-5 mb-3">🌱</div>
-                        <h3 class="h4 mb-3">Sustainable Practice</h3>
-                        <p>We're committed to ethical sourcing and eco-friendly practices that respect our planet.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 fade-in">
-                <div class="card h-100 border-0 shadow-sm">
-                    <div class="card-body text-center p-4">
-                        <div class="display-5 mb-3">💝</div>
-                        <h3 class="h4 mb-3">Community First</h3>
-                        <p>More than just coffee, we're creating spaces where connections flourish and community thrives.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row align-items-center mt-4">
+        <div class="row align-items-center mt-3 coffee-bg rounded-3 p-4">
             <div class="col-md-6 fade-in order-md-2">
                 <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1600&h=900&q=80" alt="Coffee Brewing" class="img-fluid rounded">
             </div>
             <div class="col-md-6 fade-in order-md-1">
-                <h2>Experience the Difference</h2>
-                <p class="mt-3">At Java Been, we believe that great coffee is an art form. Our baristas are passionate craftspeople who take pride in creating the perfect cup for you.</p>
-                <ul class="list-unstyled mt-4">
-                    <li class="mb-3">✨ Expertly trained baristas</li>
-                    <li class="mb-3">🌟 Premium, ethically sourced beans</li>
-                    <li class="mb-3">♨️ State-of-the-art brewing methods</li>
-                    <li class="mb-3">🤝 Welcoming atmosphere</li>
+                <h2 class="coffee-text">Experience the Difference</h2>
+                <p class="mt-2">At Java Been, we believe that great coffee is an art form. Our baristas are passionate craftspeople who take pride in creating the perfect cup for you.</p>
+                <ul class="list-unstyled mt-3">
+                    <li class="mb-2">✨ Expertly trained baristas</li>
+                    <li class="mb-2">🌟 Premium, ethically sourced beans</li>
+                    <li class="mb-2">♨️ State-of-the-art brewing methods</li>
+                    <li class="mb-2">🤝 Welcoming atmosphere</li>
                 </ul>
             </div>
         </div>
